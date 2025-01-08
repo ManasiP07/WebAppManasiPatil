@@ -20,6 +20,14 @@ app.get("/api/thanks", function(req, res) {
 });
 
 
+app.get("/api/sorry", function(req, res) {
+    var soSorry= {
+        id: 7,
+        name: "wheel",
+        price: 233
+    };
+    res.send(soSorry);
+});
 
 
 app.listen(3000, function() {
