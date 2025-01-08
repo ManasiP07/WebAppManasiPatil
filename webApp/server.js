@@ -29,6 +29,15 @@ app.get("/api/sorry", function(req, res) {
     res.send(soSorry);
 });
 
+app.get("/api/bye", function(req, res) {
+    var Byee= {
+        id: 7,
+        name: "wheel",
+        price: 233
+    };
+    res.send(Byee);
+});
+
 
 app.listen(3000, function() {
   console.log("Server is running on port 3000");
